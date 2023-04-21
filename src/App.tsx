@@ -3,6 +3,7 @@ import IndexPage from './pages/index';
 import Document01 from './pages/document01';
 import Team from './pages/team';
 import RelatedPosts from './pages/relatedPosts';
+import Mapaconceptualchatgpt from './pages/mapaconceptualchatgpt';
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/document01" element={<Document01 />} />
         <Route path="/team" element={<Team />} />
         <Route path="/relatedPosts" element={<RelatedPosts />} />
+        <Route path="/mapaconceptualchatgpt" element={<Mapaconceptualchatgpt />} />
       </Routes>
     </BrowserRouter>
   );
