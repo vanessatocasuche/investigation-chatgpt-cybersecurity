@@ -9,6 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<IndexPage />} />
         <Route path="/index" element={<IndexPage />} />
         <Route path="/document01" element={<Document01 />} />
         <Route path="/team" element={<Team />} />
