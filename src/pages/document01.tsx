@@ -12,9 +12,11 @@ const Document01 = () => {
       <nav className="flex sm:justify-center space-x-4 text-center my-4 ">
         {[
           ['Página principal', '/index'],
-          ['Equipo', '/team'],
           ['Documento 01', '/document01'],
-          ['Artículos relacionados', '/relatedPosts']
+          ['Artículo elegido', '/articuloElegido'],
+          ['Metodología', '/metodologia'],
+          ['Resultados', '/resultados'],
+          ['Equipo', '/team']
         ].map(([title, url]) => (
           <Link to={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</Link>
         ))}
@@ -35,8 +37,6 @@ const Document01 = () => {
                   <span className="">¿Cómo puede un modelo de lenguaje como Chat GPT utilizarse para mejorar la detección de amenazas informáticas en Colombia actualmente?</span>
                 </h2>
               </div>
-
-
               <div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-2 '>
                 <div className='py-2 text-sm p-1 leading-4'>
                   <span className=''>Braihan Ocampo García</span> <br/>
