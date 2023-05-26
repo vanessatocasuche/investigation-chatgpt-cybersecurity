@@ -6,9 +6,11 @@ const IndexPage = () => {
       <nav className="flex sm:justify-center space-x-4 text-center my-4 ">
         {[
           ['Página principal', '/index'],
-          ['Equipo', '/team'],
           ['Documento 01', '/document01'],
-          ['Artículos relacionados', '/relatedPosts']
+          ['Artículo elegido', '/articuloElegido'],
+          ['Metodología', '/metodologia'],
+          ['Resultados', '/resultados'],
+          ['Equipo', '/team']
         ].map(([title, url]) => (
           <Link to={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</Link>
         ))}
@@ -23,7 +25,7 @@ const IndexPage = () => {
           </p>   
         </div>
 
-        <Link to="/document01" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">Ir a Documento 01</Link>
+        <Link to="/resultados" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">Ver resultados</Link>
       </div>
     </div>
   )
